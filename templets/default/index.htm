@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<script type="text/javascript">
+var base_file = "index.php";
+var base_url = "index.php?c=index&amp;";
+var base_ctrl = "c";
+var base_func = "f";
+var base_dir = "d";
+var phpok_data = "";
+var iframe_id = "";
+</script>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/style.css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery.min.js"></script>
+<script type ="text/javascript" >
+ $(function() {
+ $("#toggleBtn").click(function() {
+	 var css = document.createElement('link');    
+	 css.href="{dede:global.cfg_templets_skin/}/style/prlist1.css";    
+	 css.rel="stylesheet";    
+	 css.type="text/css";    
+	 document.getElementsByTagName('head')[0].appendChild(css);
+	 
+ });
+ 
+ $("#toggleBtn2").click(function() {
+	 var css = document.createElement('link');    
+	 css.href="{dede:global.cfg_templets_skin/}/style/prlist2.css";    
+	 css.rel="stylesheet";    
+	 css.type="text/css";    
+	 document.getElementsByTagName('head')[0].appendChild(css);
+	 
+ });
+ 
+ });
+ </script>
+<LINK rel=stylesheet type=text/css href="{dede:global.cfg_templets_skin/}/style/root.css">
+<SCRIPT language=javascript type=text/javascript src="{dede:global.cfg_templets_skin/}/style/root.js"></SCRIPT>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/lanrenzhijia.css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/lanrenzhijia.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/bgstretcher.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#dropDown").click(function(){
+			  $("#list").toggle(1000);
+		});
+        //  Initialize Backgound Stretcher	   
+		$('BODY').bgStretcher({
+			images: ['{dede:global.cfg_templets_skin/}/images/a1.jpg', '{dede:global.cfg_templets_skin/}/images/a2.jpg', '{dede:global.cfg_templets_skin/}/images/a3.jpg'],
+			imageWidth: '100%', 
+			imageHeight: 'auto', 
+			slideDirection: 'N',
+			slideShowSpeed: 1000,
+			slideShow: 'auto',
+			transitionEffect: 'fade',
+			sequenceMode: 'normal',
+			buttonPrev: '#prev',
+			buttonNext: '#next',
+			pagination: '#nav',
+			anchoring: 'left center',
+			anchoringImg: 'left center'
+		});
+		
+	});
+</script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div id="responsive_header" style="display:none;">
+  <div class="head">
+    <div class="logo">
+      <div class="logo_right"> <img src="{dede:global.cfg_templets_skin/}/images/band.png"  style="float:left; margin:17px 0 0 20px;"/> </div>
+      <div class="logo_left"> <a href="http://thevineyard.cn/"><img src="{dede:global.cfg_templets_skin/}/images/44d400b72cd40f49.png" alt="维雅酒庄" /></a> </div>
+      <a href="javascript:void(0);">
+      <div class="menus" id="dropDown">&nbsp;</div>
+      </a> </div>
+    <DIV class=nav id="list" style="display:none;"> <SPAN class=ch><b><a href="aboutus.html" title="维雅漫步">维雅漫步</a></b>
+      <UL class=navsub>
+        <li><a href="aboutus.html">维雅简介</a></li>
+        <li><a href="c218.html">维雅来源</a></li>
+      </UL>
+      </SPAN> <SPAN class=ch><b><a href="cs-pros.html" title="美酒简介">美酒简介</a></b>
+      <UL class=navsub>
+        <li><a href="cs-huojiangjingpin.html">获奖精品</a></li>
+        <li><a href="cs-tuijianchanpin.html">推荐产品</a></li>
+        <li><a href="cs-xiliechanpin.html">系列产品</a></li>
+        <li><a href="cs-taocanchanpin.html">套餐产品</a></li>
+      </UL>
+      </SPAN> <SPAN class=ch><b><a href="cs-news.html" title="文化酒廊">文化酒廊</a></b> </SPAN> <SPAN class=ch><b><a href="contactus.html" title="联系我们">联系我们</a></b> </SPAN> </DIV>
+  </div>
+</div>
+</DIV>
+<div class="clear"></div>
+<div id="page" style="display: none_;">
+  <div class="row"> <a href="javascript:;" id="prev"></a> <a href="javascript:;" id="next"></a> </div>
+  <div class="page-content">
+    <form action="#">
+      <div id="nav"> &nbsp;</div>
+    </form>
+  </div>
+</div>
+<div class="clear"></div>
+<div style="height:50px;"></div>
+{dede:include filename="footer.htm"/}
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}">
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}">
+<script type="text/javascript">
+var base_file = "index.php";
+var base_url = "index.php?c=msg&amp;";
+var base_ctrl = "c";
+var base_func = "f";
+var base_dir = "d";
+var phpok_data = "";
+var iframe_id = "";
+</script>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/style.css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery.min.js"></script>
+<script type ="text/javascript" >
+ $(function() {
+ 	$("#dropDown").click(function(){
+			  $("#list").toggle(1000);
+		});
+ $("#toggleBtn").click(function() {
+	 var css = document.createElement('link');    
+	 css.href="tpl/www/images/prlist1.css";    
+	 css.rel="stylesheet";    
+	 css.type="text/css";    
+	 document.getElementsByTagName('head')[0].appendChild(css);
+	 
+ });
+ 
+ $("#toggleBtn2").click(function() {
+	 var css = document.createElement('link');    
+	 css.href="tpl/www/images/prlist2.css";    
+	 css.rel="stylesheet";    
+	 css.type="text/css";    
+	 document.getElementsByTagName('head')[0].appendChild(css);
+	 
+ });
+ });
+ </script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/global.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/www.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/superslide.2.1.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/msg.js"></script>
+<LINK rel=stylesheet type=text/css href="{dede:global.cfg_templets_skin/}/style/root.css">
+<SCRIPT language=javascript type=text/javascript src="{dede:global.cfg_templets_skin/}/style/root.js"></SCRIPT>
+<link href="{dede:global.cfg_templets_skin/}/style/97zzw.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="clear"></div>
+<div class="werp" style="padding-left:100px;">
+  <div class="prnames">
+    <h1>Products</h1>
+    <h2>产品详细</h2>
+  </div>
+  {dede:field.body/}
+  <div style="height:50px; clear:both;"></div>
+</div>
+<div class="clear"></div>
+<div style="height:50px;"></div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

@@ -1,0 +1,32 @@
+<DIV class="header" id="nonresponsive">
+  <DIV class=frame>
+    <DIV class=box>
+      <DIV class=werp>
+        <div class="logo"><a href="/"><img src="{dede:global.cfg_templets_skin/}/images/logo1.png" alt="" /></a></div>
+        <DIV class=nav> <SPAN class=ch><b><a href="/" title="网站首页">网站首页</a></b></SPAN> {dede:channelartlist typeid='top'  } <SPAN class=ch><b><a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a></b>
+          <UL class=navsub>
+            {dede:channel type='sun' row='100'}
+            <li><a href="[field:typelink/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </UL>
+          </SPAN> {/dede:channelartlist} </DIV>
+        <img src="{dede:global.cfg_templets_skin/}/images/band.png"  style="float:left; margin:17px 0 0 20px;"/>
+        <div class="head-right">
+          <input type ="button" value =" " id ="toggleBtn2" class="prmenu2"/>
+          <input type ="button" value =" " id ="toggleBtn" class="prmenu1"/>
+          <div class="search"> <i>产品搜索</i>
+            <form method="post" action="/plus/search.php" target="_top" name="formsearch" >
+              <!--
+                  <input type="hidden" id="_to_url" name="_to_url" value="" />
+                  <input type="hidden" id="mid" name="mid" value="10" />
+				  !-->
+              <input name="q" type="text" id="search-keyword" class="searchInput" value="在这里搜索..." 
+        onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+              <input type="submit" value=" " class="searchBtn"/>
+            </form>
+          </div>
+        </div>
+      </DIV>
+    </DIV>
+  </DIV>
+</DIV>

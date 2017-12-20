@@ -1,0 +1,160 @@
+
+HTML {
+	_background: url(../images/trans.gif) no-repeat fixed;
+}
+.bgstretcher-area {
+	text-align: left;
+}
+.bgstretcher, .bgstretcher UL, .bgstretcher UL LI {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bgstretcher UL, .bgstretcher UL LI {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.bgstretcher {
+	background: black;
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	_position: absolute; /*IE6 doesn't support fixed positioning*/
+	top: 0;
+	left: 0;
+}
+.bgstretcher-page {
+	text-align: center;
+}
+#page {
+	margin: 0 auto;
+	width: 100%;
+	text-align: left;
+}
+.page-top, .page-bottom, .page-content {
+	float: left;
+	width: 100%;
+}
+.page-top, .page-bottom {
+	height: 30px;
+}
+.page-top {
+	margin-top: 30px;
+	background: url("../images/bg/page-top.png") no-repeat left top;
+	_background: none;
+ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg/page-top.png', sizingMethod='image');
+}
+.page-bottom {
+	background: url("../images/bg/page-bottom.png") no-repeat left top;
+	_background: none;
+ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg/page-bottom.png', sizingMethod='image');
+}
+.page-content {
+	font-size: 12px;
+	color: #ccc;
+	background: url("../images/bg/page-bg.png") repeat-y left top;
+	_background: none;
+ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg/page-bg.png', sizingMethod='scale');
+}
+.page-wrapper {
+	width: 100%;
+	display: inline;
+}
+.column {
+	float: left;
+	width: 320px;
+	margin-right: 40px;
+}
+.row {
+	float: right;
+	width: 20px;
+	margin-right:10px;
+	margin-top:200px;
+}
+.row a {
+	display:block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	color:#fff;
+	background:#F06;
+	margin-top:5px;
+	border-radius:10px;
+	text-align:center;
+}
+a#prev {
+	background:url(../images/flashsub.png) no-repeat right bottom;
+	width:20px;
+	height:20px;
+	display:block;
+}
+a#next {
+	background:url(../images/flashsub.png) no-repeat right top;
+	width:20px;
+	height:20px;
+	display:block;
+}
+a:hover#prev {
+	background:url(../images/flashsub.png) no-repeat left bottom;
+}
+a:hover#next {
+	background:url(../images/flashsub.png) no-repeat left top;
+}
+.column.small {
+	width: 90px;
+}
+.column.small .row {
+	padding-bottom: 5px;
+}
+.column SELECT {
+	width: 180px;
+}
+.column LABEL {
+	cursor: pointer;
+}
+.column .row SPAN.pager {
+	float: left;
+	margin-right: 15px;
+}
+.column .row A {
+	position: relative;
+	background:#f00;
+	color:#fff;
+}
+P.larger-size {
+	font-size: 16px;
+}
+#page STRONG {
+	color: #FFFFFF;
+}
+#nav {
+	right:10px;
+	position:absolute;
+	width:20px;
+}
+#nav UL {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#nav UL LI {
+	display: inline;
+}
+#nav UL LI a {
+	margin-top: 5px;
+	color:#fff;
+	background:#666;
+	display:block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	border-radius:10px;
+	float:left;
+	text-align:center;
+}
+#nav UL LI.showPage A {
+	color: #fff;
+	background:#F06;
+}

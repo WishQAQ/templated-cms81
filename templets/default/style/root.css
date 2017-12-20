@@ -1,0 +1,66 @@
+
+.header {
+	Z-INDEX: 1001;
+	POSITION: relative;
+	HEIGHT: 91px;
+	OVERFLOW: visible;
+}
+.header .frame {
+	POSITION: absolute;
+	WIDTH: 100%;
+	COLOR: #383838
+}
+.header .frame .box {
+	POSITION: relative;
+	background:url(../images/menubg.png) repeat-x;
+	HEIGHT: 92px;
+	OVERFLOW: hidden
+}
+.header .frame .box .logo {
+	MARGIN: 15px;
+	FLOAT: left
+}
+.header .frame .box .nav {
+	FLOAT: left;
+	HEIGHT: 92px;
+	FONT-SIZE: 14px;
+	OVERFLOW: hidden;
+}
+.header .frame .box .nav .ch {
+	DISPLAY: inline-block;
+	VERTICAL-ALIGN: top;
+	OVERFLOW: hidden
+}
+.header .frame .box .nav .ch b a {
+	width:95px;
+	height:92px;
+	padding-right:2px;
+	background:url(../images/menusup.png) no-repeat right;
+	font-weight:bold;
+	line-height:92px;
+	display:block;
+	text-align:center;
+	color:#fff;
+}
+.header .frame .box .nav .ch .btn {
+	PADDING-LEFT: 20px;
+	FONT-WEIGHT: bold
+}
+.header .frame .box .nav .ch .navsub {
+	MARGIN-TOP: 10px;
+}
+.header .frame .box .nav .ch .navsub LI {
+	PADDING-BOTTOM: 3px;
+	PADDING-LEFT: 17px;
+	PADDING-RIGHT: 20px;
+	PADDING-TOP: 5px;
+	font-size:14px;
+	font-weight:bold;
+}
+.header .frame .box .nav .ch .navsub A {
+	LINE-HEIGHT: 19px;
+	COLOR: #FFEACC
+}
+.header .frame .box .nav .ch .navsub A:hover {
+	COLOR: #ff3300
+}

@@ -1,0 +1,239 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}">
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}">
+<script type="text/javascript">
+var base_file = "index.php";
+var base_url = "index.php?c=list&amp;";
+var base_ctrl = "c";
+var base_func = "f";
+var base_dir = "d";
+var phpok_data = "";
+var iframe_id = "";
+</script>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/style.css" />
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery.min.js"></script>
+
+<script type ="text/javascript" >
+ $(function() {
+ 	$("#dropDown").click(function(){
+			  $("#list").toggle(1000);
+		});
+ $("#toggleBtn").click(function() {
+	 var css = document.createElement('link');    
+	 css.href="{dede:global.cfg_templets_skin/}/style/prlist1.css";    
+	 css.rel="stylesheet";    
+	 css.type="text/css";    
+	 document.getElementsByTagName('head')[0].appendChild(css);
+	 
+ });
+ 
+ $("#toggleBtn2").click(function() {
+	 var css = document.createElement('link');    
+	 css.href="tpl/www/images/prlist2.css";    
+	 css.rel="stylesheet";    
+	 css.type="text/css";    
+	 document.getElementsByTagName('head')[0].appendChild(css);
+	 
+ });
+ });
+ </script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/global.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/www.js"></script>
+
+<script src="{dede:global.cfg_templets_skin/}/style/superslide.2.1.js"></script>
+<LINK rel=stylesheet type=text/css href="{dede:global.cfg_templets_skin/}/style/root.css">
+<SCRIPT language=javascript type=text/javascript src="{dede:global.cfg_templets_skin/}/style/root.js"></SCRIPT>
+ 
+<link href="{dede:global.cfg_templets_skin/}/style/97zzw.css" type="text/css" rel="stylesheet">
+
+
+<style>
+
+.scv_listpages{
+}
+.scv_listpages ul{
+        float:left;
+        padding:12px 0px 12px 16px;
+}
+.scv_listpages ul li{ 
+        float:left;
+        font-family:Tahoma;
+        line-height:17px;
+        margin-right:6px;
+        border:1px solid #E9E9E9;
+}
+.scv_listpages ul li a{
+        float:left;
+        padding:2px 4px 2px;
+        color:#555;
+        display:block;
+}
+.scv_listpages ul li a:hover{
+        color:#690;
+        text-decoration:none;
+        padding:2px 4px 2px;
+}
+.scv_listpages ul li.thisclass,
+.scv_listpages ul li.thisclass a,.pagebox ul li.thisclass a:hover{
+        background-color:#F8F8F8; 
+        padding:2px 4px 2px;
+        font-weight:bold;
+}
+.scv_listpages .pageinfo{
+        line-height:21px;
+        padding:12px 10px 12px 16px;
+        color:#999;
+}
+.scv_listpages .pageinfo strong{
+        color:#555;
+        font-weight:normal;
+        margin:0px 2px;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+   
+<div id="responsive_header" style="display:none;">
+<div class="head">
+	<div class="logo">
+		<div class="logo_right">
+				<img src="{dede:global.cfg_templets_skin/}/images/band.png"  style="float:left; margin:17px 0 0 20px;"/>
+		</div>
+		 <div class="logo_left">
+			<a href="http://thevineyard.cn/"><img src="{dede:global.cfg_templets_skin/}/images/44d400b72cd40f49.png" alt="维雅酒庄" /></a>
+		 </div>
+		<a href="javascript:void(0);"><div class="menus" id="dropDown">&nbsp;</div></a>
+	</div>
+
+        <DIV class=nav id="list" style="display:none;">
+       
+          		          <SPAN class=ch><b><a href="aboutus.html" title="维雅漫步">维雅漫步</a></b>
+                   <UL class=navsub>
+                      <li><a href="aboutus.html">维雅简介</a></li>
+                    <li><a href="c218.html">维雅来源</a></li>
+                    </UL>
+           
+          </SPAN>
+                  <SPAN class=ch><b><a href="cs-pros.html" title="美酒简介">美酒简介</a></b>
+                   <UL class=navsub>
+                      <li><a href="cs-huojiangjingpin.html">获奖精品</a></li>
+                    <li><a href="cs-tuijianchanpin.html">推荐产品</a></li>
+                    <li><a href="cs-xiliechanpin.html">系列产品</a></li>
+                    <li><a href="cs-taocanchanpin.html">套餐产品</a></li>
+                    </UL>
+           
+          </SPAN>
+                  <SPAN class=ch><b><a href="cs-news.html" title="文化酒廊">文化酒廊</a></b>
+          
+          </SPAN>
+                  <SPAN class=ch><b><a href="contactus.html" title="联系我们">联系我们</a></b>
+          
+          </SPAN>
+            
+      </DIV>
+</div>
+</div>
+
+	<div class="clear"></div><style type="text/css">
+body { background:url({dede:global.cfg_templets_skin/}/images/bgnews.png);}
+</style>
+<div class="body">
+ <div class="w940">
+	<div class="left">
+    <div style="height:30px; overflow:hidden;">
+	
+	<!--
+	
+	<script type='text/javascript'>
+function __7__iFrameHeight() {
+	var ifm= document.getElementById('__7__iframepage');
+	var subWeb = document.frames ? document.frames['__7__iframepage'].document : ifm.contentDocument;
+	if(ifm != null && subWeb != null) {
+		ifm.height = subWeb.body.scrollHeight + 30;
+	}
+}
+</script>
+
+<iframe src='index.php?c=search&amp;f=iframe&amp;mid=7&cateid=1&randtime=144612639117&amp;' id='__7__iframepage' name='__7__iframepage' frameBorder=0 scrolling=no width='100%' onLoad='__7__iFrameHeight()' style='z-index:50'></iframe>
+!-->
+
+</div>
+
+
+	<div class="content" style="padding-left:7px; margin-top:10px;">
+	
+	<!--
+	<ul class="catelist">
+	
+	{dede:channel            row='10'           type ='son'       reid ='7'   }
+				<li class="parent"><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+				
+							
+						{/dede:channel}	
+							
+						</ul>
+						!-->
+</div>
+	</div>
+	<div class="right">
+		<div class="vmenu"><h3>搜索结果</h3></div>
+		<div class="box">
+			<ul class="newslist">
+			
+	{dede:list   perpage='8'  }
+	
+	<li><span class="date">[field:pubdate function="GetDateTimeMK(@me)" /]&nbsp;</span><a href="[field:arcurl/]" style="">[field:title/]</a></li>
+						
+	{/dede:list}					
+						
+						</ul>
+			<div style="padding:20px 0; height:30px;"><div class="clear"></div>
+			
+			
+<div class="nav_page">
+
+
+        <div class="scv_listpages">
+<ul class="pagelist">
+{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+</ul>
+</div>
+		
+		
+		
+    </div>
+	
+	
+	</div>
+	
+	
+	
+		</div>
+	</div>
+	<div class="clear"></div>
+    </div>
+</div>
+<div class="clear"></div>
+<div style="height:50px;"></div>
+
+
+
+{dede:include filename="footer.htm"/}
+
+</body>
+</html>

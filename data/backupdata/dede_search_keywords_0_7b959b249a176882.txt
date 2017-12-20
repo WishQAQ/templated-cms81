@@ -1,0 +1,8 @@
+INSERT INTO `dede_search_keywords` VALUES('1','12333','12333','4','0','1446175784','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','','','1','0','1446175622','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','法国皇家','法国 皇家','2','0','1446175668','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','重要性','重要性','1','0','1446175677','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','12222','12222','2','0','1446175774','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','2333','2333','1','0','1446175788','0','0');
+INSERT INTO `dede_search_keywords` VALUES('7','红酒','红酒','3','0','1446176302','0','0');
+INSERT INTO `dede_search_keywords` VALUES('8','法国','法国','1','2','1446176318','0','0');

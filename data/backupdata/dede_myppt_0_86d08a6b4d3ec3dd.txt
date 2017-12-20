@@ -1,0 +1,4 @@
+INSERT INTO `dede_myppt` VALUES('1','1','0','1','/style/images/banner01.jpg','');
+INSERT INTO `dede_myppt` VALUES('2','1','0','2','/style/images/banner02.jpg','');
+INSERT INTO `dede_myppt` VALUES('3','1','0','3','/style/images/banner03.jpg','');
+INSERT INTO `dede_myppt` VALUES('4','1','0','幻灯','/style/images/banner04.jpg','');
